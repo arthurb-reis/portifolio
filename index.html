@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <!--Definicoes para o bootstrap-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arthur Reis</title>
+    <!--Link para o bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <!--Body-->
+  <body>
+    <!--Navbar expandindo somente em telas medias-->
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark" aria-label="navbar">
+      <div class="container-fluid">
+        <!--Botao de colapsar navbar-->
+        <a class="navbar-brand" href="#">Arthur Reis</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--Menu: Home, sobre, portifolio, habilidades e resumo (experiencia)-->
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav">
+            <!--Home-->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+
+            <!--Sobre-->
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">Sobre</a>
+            </li>
+
+            <!--Habilidades-->
+            <li class="nav-item">
+              <a class="nav-link" href="#habilidades">Habilidades</a>
+            </li>
+
+            <!--Portifolio-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#portifolio" data-bs-toggle="dropdown" aria-expanded="false">Portifólio</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Ciência de dados</a></li>
+                <li><a class="dropdown-item" href="#">Base de dados</a></li>
+                <li><a class="dropdown-item" href="#">Desenvolvimento Web</a></li>
+              </ul>
+            </li>
+
+            <li class="nv-item">
+              <a class="nav-link" href="#experiencias">Experiências</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!--home-->
+    <div class="container-fluid" id="home">
+      <div class="row">
+        <!--Coluna com nome e links-->
+        <div class="col-12 col-sm-5 apresentacao">
+          <h3>Olá,</h3>
+          <h2>EU SOU</h2><h1>ARTHUR REIS</h1>
+          <h4>Bem vindo ao meu portifólio</h4>
+          <a class="btn" href="#sobre" role="button">Saiba mais sobre mim</a>
+          <div class="container-sm redes">
+            <div class="row">
+              <div class="col-4 col-lg-2">
+                <img src="img/icons/github.png" class="img-fluid" alt="github">
+              </div>
+              <div class="col-4 col-lg-2">
+                <img src="img/icons/linkedin.png" class="img-fluid" alt="linkedin">
+              </div>
+              <div class="col-4 col-lg-2">
+                <img src="img/icons/instagram.png" class="img-fluid" alt="instagram">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Coluna com imagem, so aparece em telas grandes-->
+        <div class="col-sm-7 d-none d-sm-block">
+          <img src="img/apresentacao.png" class="img-fluid img_apresentacao" alt="img-apresentacao">
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="sobre">
+      <div class="row">
+        <div class="col-sm-12 d-lg-none foto">
+          <img src="img/eur.jpg" class="img-fluid eur" alt="eu">
+        </div>
+        <div class="d-none col-sm-3 d-lg-block foto">
+          <img src="img/euq.jpg" class="img-fluid euq" alt="eu">
+        </div>
+        <div class="col-sm-12 col-lg-9 text-right">
+          <p class="resumo">Tenho 20 anos e sou estudante de Engenharia de Computação na Universidade se São Paulo, campus São Carlos
+            no Instituto de Ciências de Computação e Matemática (ICMC) e Escola de Engenharia de São 
+            Carlos (EESC). Sou apaixonado por metodologias ágeis e atualmente curso as disciplinas da ênfase
+            de Engenharia de Software. Tenho um perfil bastante analítico e utilizo bastante a ciência de dados
+            para tomar decisões.
+          </p>
+          <p class="resumo">No meu tempo livre gosto bastante de praticar esportes. Sou atleta de natação há mais de 10 anos e 
+            triatleta amador há 5 anos. Sou adepto aos hábitos saudáveis e me divirto participando de competições esportivas.
+          </p>
+          <button class="btn curiosidades">Mais curiosidades sobre mim</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="habilidades">
+      <h1>Minhas Habilidades</h1>
+      <div class="row">
+        <div class="col-6 col-md-4 hab">
+          <h3>Linguagem C</h3>
+          <div class="progress" role="progressbar">
+            <div class="progress-bar" style="width: 85%"></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 hab">
+          <h3>Java</h3>
+          <div class="progress" role="progressbar">
+            <div class="progress-bar" style="width: 50%"></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 hab">
+          <h3>Python</h3>
+          <div class="progress" role="progressbar">
+            <div class="progress-bar" style="width: 85%"></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 hab">
+          <h3>HTML e CSS</h3>
+          <div class="progress" role="progressbar">
+            <div class="progress-bar" style="width: 70%"></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 hab">
+          <h3>SQL</h3>
+          <div class="progress" role="progressbar">
+            <div class="progress-bar" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 hab">
+          <h3>C++</h3>
+          <div class="progress" role="progressbar">
+            <div class="progress-bar" style="width: 40%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="portifolio">
+      <h1>Portifólio</h1>
+      <div class="row">
+        <div class="col-4">
+          <div class="card" style="width: 100%;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ciência de Dados</h5>
+              <p class="card-text">Desenvolvi alguns projetos utilizando a linguagem R para criar modelos de regressão a partir de bases de dados reais.</p>
+              <a href="#" class="btn btn-primary">Projetos</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="width: 100%;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Base de Dados</h5>
+              <p class="card-text">Fiz diversas atividades utilizando SQL, incluindo criação de tabelas e buscas complexas.</p>
+              <a href="#" class="btn btn-primary">Projetos</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="width: 100%;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Desenvolvimento Web</h5>
+              <p class="card-text">Desenvolvi alguns projetos web responsivos, utilizando HTML, CSS e o Bootstrap.</p>
+              <a href="#" class="btn btn-primary">Projetos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="experiencia">
+      <h1>Experiências</h1>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
