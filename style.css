@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
+body {
+    padding-top: 56px;
+    background-color: #E5E5E5;
+}
+
+body ::selection {
+    color: #E5E5E5;
+    background-color: #263138;
+}
+
 #home {
     background-color: #E5E5E5;
-    padding-top: 57px;
 }
 
 #home ::selection {
@@ -153,14 +162,19 @@
     height: 100%;
 }
 
-#experiencia {
+#portifolio .card-img-top {
+    height: 150px;
+
+}
+
+#experiencias {
     text-align: center;
     background-color: #E5E5E5;
     color: #263138;
     padding-top: 80px;
 }
 
-#experiencia ::selection {
+#experiencias ::selection {
     color: #E5E5E5;
     background-color: #263138;
 }
